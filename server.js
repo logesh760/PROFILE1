@@ -10,10 +10,15 @@ const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 
 // Explicit route for Resume PDF with inline viewing headers
-app.get(['/Logeshwaran_M.pdf', '/logeshwaran_m.pdf',  '/resume.pdf'], (req, res) => {
+app.get(['/Logeshwaran_M.pdf', '/logeshwaran_m.pdf', '/resume.pdf'], (req, res) => {
   res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'inline; filename="Logeshwaran_M.pdf"');
+  res.setHeader('Content-Disposition', 'inline; filename="logeshwaran_m.pdf"');
   res.sendFile(path.join(__dirname, 'logeshwaran_m.pdf'));
+});
+
+// Explicit route for CSS to handle any case
+app.get(['/Style.css', '/style.css'], (req, res) => {
+  res.sendFile(path.join(__dirname, 'style.css'));
 });
 
 // Serve static files from the root directory

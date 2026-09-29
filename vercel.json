@@ -4,19 +4,19 @@
   "rewrites": [
     {
       "source": "/resume",
-      "destination": "/Logeshwaran_M.pdf"
+      "destination": "/logeshwaran_m.pdf"
     },
     {
       "source": "/resume.pdf",
-      "destination": "/Logeshwaran_M.pdf"
+      "destination": "/logeshwaran_m.pdf"
     },
     {
-      "source": "/logeshwaran_m.pdf",
-      "destination": "/Logeshwaran_M.pdf"
+      "source": "/Logeshwaran_M.pdf",
+      "destination": "/logeshwaran_m.pdf"
     },
     {
-      "source": "/style.css",
-      "destination": "/Style.css"
+      "source": "/Style.css",
+      "destination": "/style.css"
     }
   ],
   "headers": [
@@ -29,7 +29,7 @@
         },
         {
           "key": "Content-Disposition",
-          "value": "inline; filename=\"Logeshwaran_M.pdf\""
+          "value": "inline; filename=\"logeshwaran_m.pdf\""
         },
         {
           "key": "Access-Control-Allow-Origin",
